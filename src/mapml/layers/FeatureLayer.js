@@ -88,7 +88,7 @@ export var MapMLFeatures = L.FeatureGroup.extend({
         this.clearLayers();
         this.addData(feature, this.options.nativeCS, this.options.nativeZoom);
         e.popup._navigationBar.querySelector("p").innerText = (e.i + 1) + "/" + this.options._leafletLayer._totalFeatureCount;
-        e.popup._content.querySelector("iframe").srcdoc = `<meta http-equiv="content-security-policy" content="script-src 'none';">` + feature.querySelector("properties").innerHTML;
+        e.popup._content.querySelector("iframe").srcdoc = `<meta http-equiv="content-security-policy" content="script-src 'none';">` + `<style>:root{font:message-box;}body{margin:0;}</style>` + feature.querySelector("properties").innerHTML;
       }
     },
 

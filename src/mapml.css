@@ -8,6 +8,30 @@
   min-width: 100%;
   width: 100% !important;
   height: 100% !important;
+  font: message-box;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.leaflet-control-container,
+.mapml-focus-buttons,
+.mapml-contextmenu {
+  font: menu;
+  line-height: inherit;
+}
+.leaflet-control-container,
+.leaflet-control-scale-line,
+.leaflet-container .leaflet-control-scale,
+.leaflet-container .leaflet-control-attribution,
+.mapml-debug-banner,
+.mapml-focus-buttons {
+  font-size: .875rem;
+}
+.mapml-contextmenu {
+  font-size: .75rem;
+}
+.mapml-contextmenu kbd {
+  font: inherit;
 }
 
 /* this is required by tiles which are actually divs with multiple images in them */
@@ -26,13 +50,6 @@
 }
 .leaflet-image-loaded {
         visibility: inherit;
-}
-
-/* Use legible font-sizes (Leaflet upstream PR: https://github.com/Leaflet/Leaflet/pull/7346). */
-.leaflet-control-scale-line,
-.leaflet-container .leaflet-control-scale,
-.leaflet-container .leaflet-control-attribution {
-  font-size: 12px;
 }
 
 /* Remove opinionated color of links. */
@@ -58,9 +75,11 @@
   box-sizing: border-box;
   width: 44px !important;
   height: 44px !important;
-  line-height: 44px !important;
-  font-size: 34px !important;
+  font: inherit;
   font-weight: normal;
+  font-size: 34px !important;
+  line-height: 1.15 !important;
+  overflow: hidden;
 }
 
 .leaflet-control-layers-toggle {
@@ -232,7 +251,6 @@
 .mapml-contextmenu a.mapml-contextmenu-item {
   display: block;
   color: #222;
-  font-size: 12px;
   line-height: 20px;
   text-decoration: none;
   padding: 0 12px;
@@ -268,7 +286,6 @@
 
 .mapml-debug-banner {
   margin-left: 4px;
-  font-weight: bold;
   text-transform: uppercase;
 }
 
@@ -414,7 +431,6 @@ summary {
 	text-align: center;
 	width: 18px;
 	height: 14px;
-	font: 16px/14px Tahoma, Verdana, sans-serif;
 	color: #c3c3c3;
 	text-decoration: none;
 	font-weight: bold;

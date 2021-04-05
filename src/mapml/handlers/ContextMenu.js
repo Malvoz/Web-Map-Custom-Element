@@ -105,7 +105,7 @@ export var ContextMenu = L.Handler.extend({
     this._container.style.zIndex = 10001;
     this._container.style.position = "absolute";
 
-    this._container.style.width = "150px";
+    this._container.style.width = "165px";
     
     for (let i = 0; i < 6; i++) {
       this._items[i].el = this._createItem(this._container, this._items[i]);
@@ -130,7 +130,7 @@ export var ContextMenu = L.Handler.extend({
     this._layerMenu = L.DomUtil.create("div", "mapml-contextmenu mapml-layer-menu", map._container);
     this._layerMenu.style.zIndex = 10001;
     this._layerMenu.style.position = "absolute";
-    this._layerMenu.style.width = "150px";
+    this._layerMenu.style.width = "165px";
     for (let i = 0; i < this._layerItems.length; i++) {
       this._createItem(this._layerMenu, this._layerItems[i]);
     }
@@ -617,15 +617,15 @@ export var ContextMenu = L.Handler.extend({
     copyEl.setAttribute("aria-expanded","true");
     menu.style.display = "block";
 
-    if (click.containerPoint.x + 150 + 80 > mapSize.x) {
+    if (click.containerPoint.x + 165 + 80 > mapSize.x) {
       menu.style.left = 'auto';
-      menu.style.right = 150 + 'px';
+      menu.style.right = 165 + 'px';
     } else {
-      menu.style.left = 150 + 'px';
+      menu.style.left = 165 + 'px';
       menu.style.right = 'auto';
     }
 
-    if (click.containerPoint.y + 150 > mapSize.y) {
+    if (click.containerPoint.y + 165 > mapSize.y) {
       menu.style.top = 'auto';
       menu.style.bottom = 20 + 'px';
     } else {
