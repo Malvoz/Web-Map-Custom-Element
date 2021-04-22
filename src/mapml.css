@@ -507,3 +507,48 @@ svg.leaflet-image-layer.leaflet-interactive g {
   color: #fff;
   text-shadow: 1px 1px 1px #000, 1px 1px 1px #000;
 }
+
+.mapml-focus-buttons a,
+.leaflet-container a.leaflet-popup-close-button {
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  min-height: 44px;
+  line-height: 44px;
+}
+.leaflet-popup-content-wrapper {
+  padding-top: 44px;
+}
+.leaflet-popup-content {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.mapml-focus-buttons {
+  display: block;
+  text-align: center;
+}
+.mapml-focus-buttons a {
+  display: inline-block;
+  padding: 0;
+}
+.leaflet-container a.leaflet-popup-close-button {
+  padding: 0;
+  font-size: 20px;
+}
+.leaflet-popup-content .mapml-feature-count {
+  margin: 0;
+  padding: 0;
+  line-height: 44px;
+}
+.mapml-popup-content hr:last-of-type {
+  margin-bottom: 0;
+  border-bottom: 0;
+  border-top: 1px solid #e3e3e3;
+}
+.mapml-popup-content:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+.leaflet-popup-tip-container {
+  margin-top: -1px;
+}
