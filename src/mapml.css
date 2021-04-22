@@ -545,7 +545,7 @@ svg.leaflet-image-layer.leaflet-interactive g {
   border-bottom: 0;
   border-top: 1px solid #e3e3e3;
 }
-.mapml-popup-content:first-child {
+.mapml-popup-content :first-child {
   margin-top: 0;
   padding-top: 0;
 }
