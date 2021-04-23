@@ -537,7 +537,7 @@ svg.leaflet-image-layer.leaflet-interactive g {
 }
 .leaflet-popup-content .mapml-feature-count {
   margin: 0;
-  padding: 0;
+  padding: 0 5px;
   line-height: 44px;
 }
 .mapml-popup-content hr:last-of-type {
